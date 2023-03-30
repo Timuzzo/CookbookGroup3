@@ -26,7 +26,6 @@ body {
   max-width: 1600px;
   min-height: 100vh;
 }
-
 h1 {
   font-size: 96px;
   color: #fff;
@@ -34,6 +33,11 @@ h1 {
 
 h2 {
   font-size: 64px;
+  color: #fff;
+}
+h3
+{
+  font-size: 20px;
   color: #fff;
 }
 
@@ -247,6 +251,7 @@ header {
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 10;
 }
 
 .mobile_menu.active {
@@ -273,7 +278,7 @@ header {
 }
 
 .mobile_menu ul li a:hover {
-  color: #1c69d4;
+  color: var(--red);
 }
 
 .mobile_menu_search {
@@ -373,7 +378,87 @@ header {
 /* ========================
       Category page          
 =========================*/
+.bg-banner {
+  background-image: url(../images/pizza_category_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+/* display: flex;
+  flex-direction: column; */
+/*  height: 200px; */
+}
+.bg-banner h2 {
+/*  text-align: center; */
+  width: 100%;
+  padding: 30px; 
+  display: flex;
+  justify-content: center;
+}
+.cat-wrapper {
+  background: var(--lightgrey);
+}
+.cat-container {
+  border: 2px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px); 
+  max-width: 1200px; 
+  gap: 20px;
+  place-content: center;
+}
+.cat-grid-item {
+  border: 2px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 250px; 
+  padding: 2rem;
+  position: relative;
+}
+.img-container {
+  border: 2px;
+  display: block;
+}
+.img-container img {
+  width: 250px;
+} 
+.text-overlay {
+  border: 2px;
+  position: absolute;
+  top: 11%;
+  bottom: 11%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+  
+.cat-grid-item:hover .text-overlay {
+  opacity: 1;
+}
+  
+.text-overlay a {
+  border: 2px;
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  padding: 5%;
+  padding-top: 60%;
+}
 
+.text-overlay a:hover {
+  text-decoration: none;
+}
+  
 /* ========================
         Recipe page          
 =========================*/
