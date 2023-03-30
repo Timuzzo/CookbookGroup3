@@ -9,7 +9,36 @@
   </head>
   <body>
     <div class="container">
-      <div class="wrapper"></div>
+      <div class="wrapper">
+        <div class="contact_wrapper">
+          <div id="contact_header">
+            <h2 >Please contact us</h2>
+          </div>
+          <div class="contact">
+              <div class="contact_forms">
+                <p>First name</p>   
+                <input type="text" id="contact_name" name="name" placeholder="Your name"/>
+                <p>Last name</p>   
+                <input type="text" id="contact_lastname" name="lastname" placeholder="Your last name"/>
+                <p>Country</p> 
+                <select id="contact_country" name="country">
+                  <option value="ger">Germany</option>
+                  <option value="eng">England</option>
+                  <option value="usa">USA</option>
+                  <option value="usa">Other</option>
+                </select>
+                <p>Email</p>  
+                <input type="email" id="contact_email" name="email" placeholder="Your email"/>
+                <p>Subject</p>
+                <input type="text" id="contact_subject" name="subject" placeholder="What is the topic?"/>
+                <p>Your message</p>
+                <textarea id="contact_textarea" name="message" rows="10" cols="70" placeholder="Type it here"></textarea>
+                <button id="contact_button">🍕</button>
+          </div>
+        </div>
+        </div>
+        
+      </div>
     </div>
   </body>
 </html>
