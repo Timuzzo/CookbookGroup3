@@ -378,6 +378,162 @@ header {
         Recipe page          
 =========================*/
 
+/*----Header---*/
+
+.recipe-header{
+  background-image: url(../images/pizza_category_bg.png);
+}
+.recipe-h2 {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.recipe-h2 svg {
+  position: absolute;
+  width: 49px;
+  height: 43px;
+  fill: #87A549;
+}
+
+/*----Body----*/
+
+.recipe-body{
+  position: relative;
+  display: flex;
+  padding-top: 91px;
+  padding-left: 80px;
+  padding-right: 80px;
+  gap: 68px;
+  background: var(--lightgrey);
+  padding-bottom: 80px; 
+}
+
+/*---Left-side---*/
+
+.recipe-img{
+  position: relative;
+  width: 500px;
+  height: 700px;  
+}
+
+/*---Right-side---*/
+
+.recipe-right-side{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;  
+}
+  
+
+
+.recipe-time-star{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 9px;
+
+}
+
+.recipe-time{
+  width: 278px;
+  height: 17px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;  
+}
+
+.recipe-star{
+  display: flex;
+}
+
+.recipe-star svg{
+  fill: var(--red);
+  width: 24px;  
+}
+
+.recipe-p{
+  width: 873;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+h4{
+  color: var(--red);
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 7oo;
+  line-height: 23px;
+}
+
+hr{
+  background-color: #fff;
+  height: 3px;
+}
+
+.recipe-ingredients{
+  position: relative;
+  margin-top: 9px;
+  margin-bottom: 37px;
+}  
+
+
+.recipe-ingredients li{
+  position: relative;
+  margin-top: 6px;
+  list-style: none;
+}
+
+.recipe-perparation-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.recipe-perparation{
+  width: 25.75em;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+
+.recipe-steps{
+  align-content: end;
+  color: var(--darkgrey);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2em;
+  line-height: 2.38em;  
+}
+
+.recipe-steps span{
+  margin-left: 2px;
+  font-size: 48px;
+  line-height: 58px;  
+}
+.recipe-steps p{
+  width: 412px;
+  height: 6.25em;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.31rem;
+}
+
+
+/*---Footer---*/
+
+
+
+
+
+
 /* ========================
       Contact page          
 =========================*/
