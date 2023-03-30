@@ -17,18 +17,15 @@ body {
 }
 
 .container {
-  position: relative;
-  margin: 0 auto;
-  max-width: 1600px;
-  height: 100vh;
-  background: var(--lightgrey);
+  width: 100%;
 }
 
 .wrapper {
-  width: 100%;
-  position: absolute;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1600px;
+  min-height: 100vh;
 }
-
 h1 {
   font-size: 96px;
   color: #fff;
@@ -254,6 +251,7 @@ header {
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 10;
 }
 
 .mobile_menu.active {
@@ -280,7 +278,7 @@ header {
 }
 
 .mobile_menu ul li a:hover {
-  color: #1c69d4;
+  color: var(--red);
 }
 
 .mobile_menu_search {
@@ -386,13 +384,19 @@ header {
   background-size: cover;
   background-position: center;
   color: #fff;
-  display: flex;
-  height: 200px;
+/* display: flex;
+  flex-direction: column; */
+/*  height: 200px; */
 }
 .bg-banner h2 {
-  text-align: center;
+/*  text-align: center; */
   width: 100%;
-  padding-top: 50px;
+  padding: 30px; 
+  display: flex;
+  justify-content: center;
+}
+.cat-wrapper {
+  background: var(--lightgrey);
 }
 .cat-container {
   border: 2px;
