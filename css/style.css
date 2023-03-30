@@ -381,7 +381,119 @@ header {
 /* ========================
       Contact page          
 =========================*/
+.contact_wrapper {
+  background: var(--lightgrey);
+}
 
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact_forms {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact_forms > * {
+  padding: 20px 0 10px 0;
+  color: var(--darkgrey);
+  font-size: 16px;
+}
+
+.contact_forms > p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact_forms > input, textarea, select {
+  padding: 20px;
+  border-radius: 10px;
+  outline: 1px solid transparent;
+  border: 1px solid transparent;
+  width: 100%;
+  background: white;
+  /* color: #fff; */
+  transition: 0.4s ease-in-out;
+  height: 80px;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.contact_forms > input:focus, select:focus {
+  border: 1px solid var(--red);
+}
+
+#contact_country {
+  padding: 10px 10px 10px 20px;
+  color: black;
+}
+
+#contact_header {
+  background-image: url(../images/contact_category_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contact_header h2 {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#contact_button {
+  background-color: white;
+  border: none;
+  color: var(--red);
+  border-radius: 10px;
+  padding: 5px 30px;
+  width: 40%;
+  cursor: pointer;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  height: 80px;
+  align-self: center;
+}
+
+#contact_button svg {
+  width: 40px;
+  fill: var(--red);
+}
+
+#contact_button:hover {
+  background-color: #3e8e41;
+}
+
+#contact_button:active svg {
+  fill: white;
+}
+
+#contact_button:active {
+  background-color: var(--red);
+  transform: translateY(2px);
+}
+
+
+#contact_textarea {
+  resize: none;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  height: 200px;
+}
+
+#contact_textarea:focus {
+  border: 1px solid var(--red);
+}
 /* ========================
         Media Query          
 =========================*/
@@ -475,4 +587,14 @@ header {
   .home_footer span {
     font-size: 12px;
   }
+  .contact_forms {
+    align-items: center;
+  }
+  .contact_forms > input, textarea, select {
+    width: 90%;
+  }
+
+  #contact_textarea {
+    width: 90%;
+}
 }
