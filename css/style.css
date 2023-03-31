@@ -478,7 +478,17 @@ header {
 .text-overlay a:hover {
   text-decoration: none;
 }
-
+.category-star {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.category-star svg {
+  fill: orange;
+  width: 15px;
+}
 /* ========================
         Recipe page          
 =========================*/
