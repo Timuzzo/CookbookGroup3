@@ -399,15 +399,36 @@ header {
       Category page          
 =========================*/
 .bg-banner {
-  background-image: url(../images/pizza_category_bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   color: #fff;
   /* display: flex;
   flex-direction: column; */
   /*  height: 200px; */
 }
+.pizza_bg {
+  background-image: url(../images/pizza_category_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.dolce_bg {
+  background-image: url(../images/dolce_category_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.pasta_bg {
+  background-image: url(../images/pasta_category_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.risotto_bg {
+  background-image: url(../images/risotto_category_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-banner h2 {
   /*  text-align: center; */
   width: 100%;
